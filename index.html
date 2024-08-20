@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<body id="mybody" class="mybody ">
+    <header id="unique">
+       <div>
+        <p class="honk"> Welcome to elca learn!</p>
+       </div>
+    </header>
+      <video src="firstVideo.mp4" autoplay muted loop></video>  
+      <!-- navbar of the page -->
+    <nav id="unique1">
+        <div class="logo">
+            <p  class="honk">ECA</p>
+        </div>
+        <ul  class="honk">
+            <li> <a href="">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="contact.html">Contact</a></li>
+            <li id ='dark'> <i class='bx bx-moon bx-flashing' style='color:#eea00d' ></i> </li>
+        </ul>
+        <!-- this is toggle button -->
+
+        <div class="menu"  id="btn">
+            <button id="toggle"  class="honk"> 
+                <i class='bx bx-menu bx-flashing' ></i>
+            </button>
+        </div>
+
+    </nav>
+    <!-- dropdown menu that work only under 530px -->
+    <div class="list listcon honk" id="list" id="unique2">
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li onclick="About()"> <a href="about.html">About</a></li>
+            <li onclick="Contact()"> <a href="contact.html">Contact us</a></li>
+            <li onclick="dropdownDM()"> <a href=""></a> <i class='bx bx-moon bx-flashing' style='color:#eea00d' ></i> </li>
+        </ul>
+    </div>
+   
+
+    <!-- introducation  -->
+    <div class="intro_cont" id="uni">
+        <p class="pp">Ace Your High School Exams with Practice Made Easy Stressed about upcoming high school exams?
+               We've got you covered! Our platform is packed with practice questions that mirror real exams,
+               giving you the edge you need to succeed. Conquer any subject and master essential concepts with 
+               our interactive exercises.Get ready to ace those exams and reach your academic goals! </p>
+                
+                <button id="secondbutton"> 
+                    Learn more
+                </button>
+     </div>
+
+     <div class="div_pro_img" id="imgcon">
+        <div class="image_pro">
+            <img src="img1.jpg" alt="">
+
+        </div>
+        <div class="image_pro">
+            <img src="img2.jpg" alt="">
+        </div>
+        <div class="image_pro">
+            <img src="img3.jpg" alt="">
+        </div>
+        <div class="image_pro">
+            <img src="img4.jpg" alt="">
+        </div>
+     </div>
+ 
+
+    <div class="second_intro" id="si" >
+        <div class="ppp" id="ppp">
+            <h1>Try for free get start now!!!</h1>
+        </div>
+
+        <div class="get-butt" id="getbtn">
+            <button id="get"> get start</button>
+        </div>
+
+        <div class="grade" id="gradeli">
+          <p>  For now this prepared for grade 11 </p> 
+          <button onclick="g11()"> Bio</button>
+            <button onclick="myalert()"> Phy </button>
+            <button onclick="myalert()"> Math</button>
+            
+            <button onclick="myalert()"> Chem</button>
+
+            
+            <button id="closebtn" onclick="Home()"> Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <!-- last part of page footer -->
+<footer id="footer">
+    <div class="link">
+         <div class="link_lis">
+            <a href=""><i class='bx bxl-facebook-circle' style='color:#ffff'></i></a>
+            <a href=""><i class='bx bxl-telegram' style='color:#ffff' ></i></a>
+            <a href=""><i class='bx bxl-linkedin'style='color:#ffff' ></i></a>
+            <a href=""><i class='bx bxl-youtube'style='color:#ffff' ></i></a>
+         </div>
+    </div>
+
+   <div  class="footer-p">
+   <p> <a href="">Home</a> </p>
+   <p> <a href="about.html">About us</a> </p>
+   <p> <a href="contact.html"> Contact</a> </p>
+   </div>
+
+   <p class="lf">&copy; 2024  All Rights Reserved</p>
+
+</footer>
+</body>
+
+</html>

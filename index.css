@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+  body{height: 130vh;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    background-color:rgba(175, 178, 182, 0.081);
+}
+/* this is font family class honk drived from google*/
+.honk {
+    font-family: "Honk", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 29px;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
+nav{
+    background-color:rgba(238, 242, 247, 0.457);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 65px;
+}
+.menu button{
+    color: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.logo p{
+    font-size: 34px;
+    color: #000000;
+    font-weight: 600;
+}
+.logo p:hover{
+    transition: 1s;
+    padding: 0px 20px;
+    border-radius: 7px;
+}
+nav ul li:hover{
+    transition: 1s;
+    box-shadow: 3px 3px 70px rgba(255, 187, 0, 0.777);
+    background-color: transparent;
+    
+}
+ul{list-style: none;}
+.list{
+    border-radius:10px ;
+    max-width: 400px;
+    width: 100%;
+    margin: 10px auto;
+    height: 200px;
+    transition:.5s ;
+}
+.listcon{
+    height: 0;
+    overflow: hidden;
+}
+li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+ button{border-radius: 3px; }
+.intro_cont{
+    margin: 30px auto;
+    max-width: 500px;
+    height: 200px;
+    width: 100%;
+}
+.pp{
+    background-image: linear-gradient(43deg,#4158d0,#c850c0,#ffcc70);
+    padding: 10px;
+    text-align: justify;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#toggle{
+    font-size: 33px;
+    font-weight: 600;
+}
+video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.second_intro{
+    background-color: #1a19194a;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    background-image: linear-gradient(43deg,#4158d0,#c850c0,#ffcc70);
+    -webkit-background-clip: text;
+     color: transparent;
+}
+.get-butt button{
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    font-weight: 600;
+    transition: 1s;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+.get-butt button:hover{
+    background-image: linear-gradient(-43deg,#4158d0,#c850c0,#ffcc70);
+   -webkit-background-clip: text;
+    color: transparent;
+    border: 2px rgb(0, 0, 0) solid;
+}
+footer{
+    width: 100%;
+    background-color: #dddd;
+    margin-top:65px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+
+footer .link{
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    
+   
+}
+
+.link_lis{
+    margin-right: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    
+
+
+
+}
+
+.link_lis a{
+    padding: 4px 6px;
+    
+}
+
+.link_lis a:hover{
+    background-color: rgb(161, 155, 155);
+    color: #4158d0;
+}
+
+.footer-p{
+   padding: 20px;
+}
+
+.footer-p p{
+    text-decoration: none;
+    
+    padding: 10px;
+    color: #fff;
+    font: 17px;
+}
+
+.lf{
+    text-align: center;
+    position: relative;
+    bottom: -21px;
+}
+/*this media query 0-530px*/
+
+    @media screen and (max-width:530px){
+        li{
+        background-color: rgba(169, 163, 163, 0.138);
+        padding: 10px;
+        border-radius: 7px;
+        }
+        li:hover{
+            background-color: rgba(0, 0, 0, 0.24);
+            border-radius: 0px;
+        }
+        li a:hover{
+            color: #ffff;
+            width: 100%;
+        }
+        .intro_cont{padding: 10px;}
+        .intro_cont .pp{ font-size: 13px;}
+         nav ul{display: none;}
+         #secondbutton{
+            width: 100%;
+            padding: 10px 0px;
+            background:linear-gradient(-43deg,#4158d0,#c850c0,#ffcc70);
+            color: #fff;
+            border: none;
+        }
+        video{
+            display: none;
+            margin-top: 905px;
+            height: 350px;
+        }
+        .second_intro{
+        text-align: center;
+        }
+
+        
+        footer .link{
+            height: 80px;
+            display: flex;
+            justify-content: center;}
+
+      video{
+             margin-top: 1890px;
+             height: 349px;
+            }  
+    }
+    /* over 530px  */
+    @media screen and (min-width:530px) {
+        body{height: 170vh;}
+        li{display: inline;}
+        .menu{display: none;}
+        .list{display: none;}
+        footer{height: 300px;}
+        .intro_cont{
+            max-width: 650px;
+            width: 100%;
+            background-color: #fdfdfd00;
+            padding: 10px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .intro_cont:hover{
+            padding: 5px;
+            width: 97%;
+            transform: scale(0.9);
+        }
+        #secondbutton{
+            padding: 6px 40px;
+            border-radius:5spx ;
+            border: 1px solid #000000;
+            background-color: #000;
+            color: #fff;
+        }
+
+        #secondbutton:hover{
+            background-image: linear-gradient(-43deg,#4158d0,#c850c0,#ffcc70);
+            border: none;
+            box-shadow: 4px 4px 35px rgb(146, 74, 210);
+        }
+        video{
+            margin-top: 1872px;
+            height: 349px;
+            display: none;
+        }    
+    }
+    
+    @media screen and (min-width:641px) {
+        video{
+            margin-top: 1126px;
+        }
+        .image_pro:hover{
+    
+            scale:1.1 ;
+          
+        }
+    }
+
+
+    @media screen and (min-width:830px) {
+        .intro_cont{
+        max-width: 690px;
+        margin-left: 40px;
+        }
+       
+        video{
+            margin-top: 1126px;
+
+        }
+        .image_pro:hover{
+    
+            scale:1.1 ;
+          
+        }
+    }
+
+    @media screen and (min-width:1294px) {
+        video{
+            margin-top: 750px;
+        }
+        .image_pro:hover{
+    
+            scale:1.1 ;
+          
+        }
+    }
+    
+
+.div_pro_img{
+    max-width: 95%;
+    width: 100%;
+    max-height: 1500px;
+    /* background-color: green; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    gap: 10px;
+    margin-bottom: 50px;
+    
+    
+}
+.image_pro{
+   cursor: pointer;
+   
+    padding: 10px;
+    /* border: 1px solid red; */
+    height: 370px;
+    overflow: hidden;
+    transition:cubic-bezier(0.895, 0.03, 0.685, 0.22) 1s;
+}
+
+.image_pro img{
+    object-fit:cover;
+    position: relative;
+    width: 100%;
+    padding: px;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -10;
+    position: relative;
+
+   
+}
+
+
+.ione ::after{
+
+}
+
+.darkmode{
+    background-color: #000;
+    
+}
+#dark{
+   
+    position: relative;
+    top: 5px;
+    left: 20px;
+    
+}
+
+
+.grade{
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3px;
+    border-radius:3px ;
+   display: none;
+  
+    
+}
+.gradelist{
+    display: flex;
+}
+.grade button {
+    
+        height: 50px;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 3px 20px;
+    border: none;
+    color: #ffffff;
+    background-color:rgb(0, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 11px;
+}
+
+.grade button:hover {
+   box-shadow: 2px 3px 50px rgb(109, 109, 109);
+}
+
+.grade p{
+    font-size:23px;
+    margin: 10px;
+    font-weight: 800;
+
+}
+
+
+
+
+
+/*305line*/
