@@ -73,6 +73,7 @@ footer p{
     border-radius: 7px;
     transition: 1s;
     margin-top: 20px;
+     cursor: pointer;
 }
 
 #mybutton:hover{
