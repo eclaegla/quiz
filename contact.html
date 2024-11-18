@@ -6,6 +6,53 @@
     <title>contact</title>
     <link rel="stylesheet" href="contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+.myform{
+    background-color: orange;
+    padding: 10px;
+    width: 100%;
+    max-width: 370px;
+    height: 430px;
+    margin: 60px auto;
+    color: white;
+    border-radius: 5px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: none;
+}
+
+input::placeholder{
+    color: rgb(0, 204, 255);
+}
+
+textarea{
+    height: 150px;
+    border: none;
+    border-radius: none;
+    margin: 20px 0;
+    color: rgb(0, 204, 255);
+    padding: 10px;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+    </style>
 </head>
 <body>
     <div class="cont">
@@ -88,6 +135,31 @@ message
     </div>
 
      -->
+
+        <div class="myform">
+    <h2>Contact us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="764abbc6-879c-42b2-9297-10cb6546a98d">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input placeholder="name" type="text" name="name" required>
+        <input placeholder="email" type="email" name="email" required>
+        <textarea placeholder="message" name="message" required>
+message
+        </textarea>
+    
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit">Submit Form</button>
+    
+    </form>
+</div>
 
     <script>
 document.getElementById('btn').onclick =()=>{
